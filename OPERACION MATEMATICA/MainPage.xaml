@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OPERACION_MATEMATICA.MainPage">
+
+    <StackLayout>
+        <Image Source="mat.jpg" 
+               WidthRequest="250"
+               Margin="0,80,0,0">
+        </Image>
+        <Label Text="INGRESE EL NUMERO A"
+               FontSize="20"
+               HorizontalOptions="Center"
+               Margin="40">
+        </Label>
+        <Entry Placeholder="NUMERO A"
+               Keyboard="Numeric"
+               x:Name="a">
+            
+        </Entry>
+        <Label Text="INGRESE EL NUMERO B"
+               FontSize="20"
+               HorizontalOptions="Center"
+               Margin="40">
+        </Label>
+        <Entry Placeholder="NUMERO B"
+               Keyboard="Numeric"
+               x:Name="b">
+
+        </Entry>
+        <Label Text="RESULTADO: "
+               FontSize="30"
+               HorizontalOptions="Center"
+               Margin="60"
+               x:Name="result">
+        </Label>
+        <Button Text="CALCULAR"
+                HeightRequest="80"
+                x:Name="btnCalcular"
+                Clicked="Button_Clicked">
+            
+        </Button>
+    </StackLayout>
+
+</ContentPage>
